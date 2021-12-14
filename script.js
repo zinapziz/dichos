@@ -570,13 +570,13 @@ function initialize_generate() {
 
 function generate_html(quoteObj) {
 
-  var quoteHtml = "<i><h3>" + quoteObj["quote"] + "</h3></i><br><b> - " + quoteObj["name"] + " </b>";
+  var quoteHtml = "<i><h1>" + quoteObj["quote"] + "</h1></i><br><b> - " + quoteObj["name"] + " </b>";
   return quoteHtml;
 }
 
 function generate_tweet(quoteObj) {
   
-    var tweetHtml = '<a href="https://twitter.com/intent/tweet?button_hashtag=DichosSanJuan&text=' + quoteObj["quote"] + '%20-%20' + quoteObj["name"] + '"' + 'class="twitter-hashtag-button">Publicalo en mi tweeter</a> <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\'://platform.twitter.com/widgets.js\';fjs.parentNode.insertBefore(js,fjs);}}(document, \'script\', \'twitter-wjs\');';
+    var tweetHtml = '<a href="https://twitter.com/intent/tweet?button_hashtag=DichosSanJuan&text=' + quoteObj["quote"] + '%20-%20' + quoteObj["name"] + '"' + 'class="twitter-hashtag-button">Públicalo en mi tweeter</a> <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\'://platform.twitter.com/widgets.js\';fjs.parentNode.insertBefore(js,fjs);}}(document, \'script\', \'twitter-wjs\');';
   
   return tweetHtml;
 }
