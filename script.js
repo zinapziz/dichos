@@ -570,7 +570,7 @@ function initialize_generate() {
 
 function generate_html(quoteObj) {
 
-  var quoteHtml = "<i> " + quoteObj["quote"] + " </i> <br> <b> - " + quoteObj["name"] + " </b>";
+  var quoteHtml = "<h3><i>" + quoteObj["quote"] + "</i></h3><br><b> - " + quoteObj["name"] + " </b>";
   return quoteHtml;
 }
 
